@@ -34,12 +34,12 @@ int main(){
     
     int n = sizeof(a)/sizeof(int);
     
-    cout << search(a,n,5) << endl;
+    cout << search(a,n,5) << endl;                              // 4
     
     int n2 = sizeof(b) / sizeof(b[0]);
     //cout << n << endl;
     
-    cout << search(b,n2,3.3) << endl;
+    cout << search(b,n2,3.3) << endl;                           // 2
     
     return 0;
 }
