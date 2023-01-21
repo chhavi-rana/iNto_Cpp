@@ -1,7 +1,21 @@
+/* 
+
+Templates in C++ allow us to define generic functions and classes. 
+
+Templates in C++ promote generic programming, meaning the programmer does not need to write the same function or method for different parameters.
+
+Idea behind the templates in C++ is that we pass the data type as a parameter, so we don’t need to write the same code for different data types.
+
+
+ */
+
+
+
 #include<bits/stdc++.h>
 using namespace std;
 
 template<typename T>                           // here we replace T with required datatype like int, float, double, char, etc.
+                                              // Note: The typename keyword can always be replaced by the keyword class.
 
 int search(T arr[], int n, T key){
     for(int i = 0; i < n; i++){
