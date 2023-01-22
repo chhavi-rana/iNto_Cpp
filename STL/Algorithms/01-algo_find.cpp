@@ -20,8 +20,8 @@ int main(){
     }else{
         cout << "Found at index: " << index << endl;
     }
-    // cout << arr << endl;
-    // cout << it << endl;
+    // cout << arr << endl;              // 0x7ffe73777770
+    // cout << it << endl;              // 0x7ffe73777780     (index-->4)
 
     return 0;
 }
