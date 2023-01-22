@@ -37,7 +37,7 @@ int main(){
 
 
 
-    //It returns an iterator pointing next to the target element present or the next greater element in the array when the target is not present. 
+    //It returns an iterator pointing ** next to the target element present ** or the next greater element in the array when the target is not present. 
    // If the target is greater than the largest element in the given array, it returns an iterator at the end of the array.
     
     auto ub = upper_bound(arr, arr + size, key);
