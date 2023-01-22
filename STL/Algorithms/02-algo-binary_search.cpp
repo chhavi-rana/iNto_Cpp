@@ -41,6 +41,7 @@ int main(){
     //It returns an iterator pointing ** next to the target element present ** or the next greater element in the array when the target is not present. 
    // If the target is greater than the largest element in the given array, it returns an iterator at the end of the array.
     //  upper_bound returns the address of the first element > key [= doesn't hold here]
+    
     auto ub = upper_bound(arr, arr + size, key);
     cout << "Upper bound at: " << ub - arr << endl;                                // 5
 
