@@ -16,10 +16,17 @@ An escape sequence is a sequence of characters used in formatting the output and
 
 */
 
+
 #include<iostream>
 using namespace std;
 
+
 int main(){
-    cout << "h";
+
+    /* cout << "Hello, "Chhavi"";                           // compiler error */
+    
+    
+    cout << "Hello, \"Chhavi\". " << endl;                  // Hello, "Chhavi".
+
     return 0;
 }
