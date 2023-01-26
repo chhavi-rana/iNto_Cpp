@@ -1,0 +1,58 @@
+VVIMP : 
+After inputting an integer always use cin.get() before inputting the next string.
+while inputting an integer the '\n' part remains and that is read by the cin getline which results in errors.
+
+ex : 
+int n;
+cin >> n;
+cin.get(); // omitting this line would lead to the skipping of the next string input.
+string s[n];
+for(int i = 0; i < n; i++) {
+    getline(cin, s[i]);
+}  
+
+
+String class:
+- advantage : provides an alternative for character array.
+- wraps the character array inside a string object.
+- char s[100] --> alternative --> string s;
+- basically string class is like a container that will contain the character array internally.
+- when using iterators, we play around with addresses.
+    - to fetch the value at an address we use dereferencing ie. *it
+    - *it gives the value present at the address pointed to by it.
+
+- Difference between Iterators and Pointers :
+    link : https://www.geeksforgeeks.org/difference-between-iterators-and-pointers-in-c-c-with-examples/
+    1) A pointer hold an address in memory.
+    2) An iterator may hold a pointer, but it may be something much more complex. For example, an iterator can iterate over data that’s on file system, 
+    spread across many machines, or generated locally in a programmatic fashion.
+    ex : A good example is an iterator over linked list, the iterator will move through elements that are at nodes in the list whose addresses in RAM may be scattered.
+    3) Not all iterators allow these operations, e.g., we cannot decrement a forward-iterator, or add an integer to a nonrandom-access iterator.
+    4) A pointer of type T* can point to any type T object.
+    5) An iterator is more restricted, e.g., a vector::iterator can only refer to doubles that are inside a vector container.
+    6) We can delete a pointer using delete
+    7) Since an iterator refers to objects in a container, unlike pointers, there’s no concept of delete for an iterator. (The container is responsible for memory management.)
+    
+- iterators are defined inside the container class.
+    ex : string::iterator it = s1.begin();
+- '::' is called the scope resolution operator.
+
+- using cin for taking string input is not preferred as it omits the spaces in between.
+- using getline(cin, <str_name>); to take the input along with spaces
+
+char *strtok(char *s, char *delimiter) : 
+    - String tokenizer works with string.h and not string.
+    - so to make it work use #include <string.h>
+    - strtok returns a token on each subsequent call.
+    - on the first call, function should be passed with string argument for 's'.
+    - on subsequent calls, we should pass the string argument to the function as 'NULL'.
+
+    ex : char s[100] = "Hello guys this is vineeth";
+        first call :  char *ptr = strtok(s);
+                      cout << ptr; // prints Hello
+        second call : ptr = strtok(NULL, " ");
+                      cout << ptr; // prints guysd
+Note : 
+ to extract the underlying char* object from the string object.
+ string str = "hello";
+ char *s = (char *)str.c_str();
