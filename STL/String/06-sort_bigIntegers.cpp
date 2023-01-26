@@ -59,3 +59,9 @@ int main() {
     bigSort(s, n);
     return 0;
 }
+/* 
+
+Time complexity: O(sum * log(n)) where sum is the total sum of all string length and n is size of array 
+Auxiliary space: O(n) 
+
+*/
