@@ -8,7 +8,7 @@ S.No. | Topic Name| Status | Date Completed |
 1 | Introduction | done | 21 Dec 21 |
 2 | Generic Programming in C++ | done | 21 Jan 23 |
 3 | Algorithms STL | done | 23 Jan 23 |
-4 | Strings STL |  |  |
+4 | Strings STL | done | 26 Jan 23 |
 5 | Vectors STL |  |  |
 6 | Lists and Forward Lists STL |  |  |
 7 | Stack and Queue STL |  |  |
