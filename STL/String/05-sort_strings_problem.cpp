@@ -99,7 +99,7 @@ int main(){
     
     string arr[n];
     
-    cin.get();
+    cin.get();  // if you omit this line, error would be generated.
     for(int i = 0; i < n; i++){
         getline(cin, arr[i]);
     }
