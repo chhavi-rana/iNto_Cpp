@@ -1,13 +1,16 @@
+/* Only P-0 features implemented for vector class. */
+
 #include <iostream>
 using namespace std;
 
 template<class T>
 
 class Vector{
+    int index;
+    int capacity;
+    T *arr;
+
     public:
-        int index;
-        int capacity;
-        T *arr;
         
         Vector(){
             index = 0;
