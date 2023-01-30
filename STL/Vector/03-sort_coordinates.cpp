@@ -2,7 +2,7 @@
 
  You are standing at the origin (0, 0)
     there are various cabs around you with coordinates (xi, yi)
-    Sort them to find the order of cabs near to you
+    Sort them to find the order of cabs near to you (sorting - based on distance)
 
 */
 
