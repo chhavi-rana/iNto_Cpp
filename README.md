@@ -11,7 +11,7 @@ S.No. | Topic Name| Status | Date Completed |
 4 | Strings STL | done | 26 Jan 23 |
 5 | Vectors STL | done | 30 Jan 23 |
 6 | Lists and Forward Lists STL | done  | 30 Jan 23 |
-7 | Stack and Queue STL |  |  |
+7 | Stack and Queue STL | done | 31 Jan 23 |
 8 | Deque STL |  | |
 9 | Priority Queue STL |  |  |
 10 | Maps and Multimaps STL |  |  |
