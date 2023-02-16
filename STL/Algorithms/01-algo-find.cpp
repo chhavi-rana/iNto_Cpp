@@ -1,3 +1,25 @@
+/* 
+
+InputIterator find (InputIterator first, InputIterator last, const T& val)
+
+first,last :
+Input iterators to the initial and final positions in a sequence. The range
+searched is [first,last), which contains all the elements between first and
+last, including the element pointed by first but not the element pointed by last.
+
+val :
+Value to be search in the range
+
+Return Value :
+An iterator to the first element in the range that compares equal to val.
+If no elements match, the function returns last.
+
+Time Complexity: O(n)
+Auxiliary Space: O(1)
+
+ */
+
+
 #include<iostream>
 #include<algorithm>
 using namespace std;
