@@ -2,6 +2,7 @@
 
 Maps are associative containers that store elements in a mapped fashion. 
 Each element has a key value and a mapped value. No two mapped values can have the same key values.
+Map keeps all the keys in sorted order always.
 Maps are implemented by self-balancing search trees. In C++ STL it uses Red-Black Tree.
 
  */
