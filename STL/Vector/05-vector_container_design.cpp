@@ -54,20 +54,28 @@ class Vector{
 
 int main()
 {
-    Vector<int> v;
-    v.pushBack(1);
-    v.pushBack(2);
-    v.pushBack(3);
-    v.popBack();
-    cout << "Size " << v.sizeFunction() << endl;
-    for(int i = 0; i < v.sizeFunction(); i++) {
-        cout << v[i] << " ";
+    try {
+        Vector<int> v;
+        v.pushBack(1);
+        v.pushBack(2);
+        v.pushBack(3);
+        v.popBack();
+        
+        std::cout << "Size: " << v.size() << std::endl;
+        for (const auto& elem : v) {
+            std::cout << elem << " ";
+        }
+        std::cout << std::endl;
+
+        v.pushBack(2);
+        v.pushBack(3);
+        v.pushBack(4);
+
+        std::cout << "Size: " << v.size() << std::endl;
     }
-    cout << endl;
-    v.pushBack(2);
-    v.pushBack(3);
-    v.pushBack(4);
-    cout << "Size " << v.sizeFunction() << endl;
+    catch (const std::exception& e) {
+        std::cerr << "Exception: " << e.what() << std::endl;
+    }
 
     
     return 0;
